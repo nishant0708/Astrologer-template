@@ -196,5 +196,17 @@
     }
     .gitform_container_right{
         padding: 0px;
+        width: 100%;
+        align-items: center;
+    }
+    .gitform_right_heading{
+      text-align: center;
+    }
+    .gitform_right_description{
+      text-align: -webkit-center;
+    }
+    .gitform_right_description p{
+      text-align: center;
+      width: auto;
     }
   }
