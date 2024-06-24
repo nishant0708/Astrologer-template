@@ -1,0 +1,78 @@
+.timings_main{
+    max-width: 1300px;
+    margin: auto;
+}
+.timings{ 
+   padding: 50px 20px;
+   
+    color: white;
+   text-align: center;
+}
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    background-color: #17113F;
+    border-style: dashed;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF2B;;
+    background-image: linear-gradient(180deg, #150F3D 0%, #201A46 100%);
+    margin: 3em 1em 1em 1em;
+    --e-column-margin-right: 1em;
+    --e-column-margin-left: 1em;
+    padding: 2em 2em 2em 2em;
+
+}
+.image_container{
+    border-radius: 50%;
+    margin-top: -65px;
+    background-color: #cc9e75;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carddetail{
+    padding: 18px 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cardheading{
+    font-size: 22px;
+    color: #cc9e75;
+    font-weight: 800;
+}
+.carddescription{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+    width: 318px;
+}
+.cardbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: #cc9e75;
+    color: white;
+    height: 35px;
+    width: 125px;
+    text-align: center;
+    cursor: pointer;
+}
+.cardbutton:hover{
+    background-color: #EFDAB7;
+    color: black;
+}

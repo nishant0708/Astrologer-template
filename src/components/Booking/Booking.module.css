@@ -1,0 +1,200 @@
+.booking_main{
+ 
+    position: relative;
+}
+.booking {
+    position: relative;
+    max-width: 1300px;
+    margin: auto;
+   min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .imagecontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .imagecontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .backgroundoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #150F3DEB 0%, #150F3D 100%);
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .gitcontainer {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .gitform_container{
+
+    background-color:#150F3D;
+    border-style: dashed;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF2B;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.3);
+    margin: 10px 10px 10px 10px;
+    --e-column-margin-right: 10px;
+    --e-column-margin-left: 10px;
+    padding: 3em 3em 3em 3em;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .gitform_heading{
+    width: 100%;
+  }
+  .gitform_heading h1{
+    color:   #CC9E75;
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .gitform_description{
+    width: 100%;
+    text-overflow:wrap;
+  }
+ .gitform{
+    width: 100%;
+ }
+  .gitforminput{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color:   #CC9E75;
+    margin-top: 15px;
+  }
+  .gitforminput label{
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  .gitforminput input, .gitforminput textarea{
+    background-color: #201A46;
+    border-color: #201A46;
+    color: #fff;
+    min-height: 30px;
+    padding: 6px 16px;
+  }
+  .gitforminput input::placeholder, .gitforminput textarea::placeholder{
+    color: #69727d;
+  }
+  .gitforminput input:focus, .gitforminput textarea:focus{
+     outline: 1px solid #CC9E75;
+
+  }
+  .gitforminput textarea{
+    resize: none;
+    size: 5;
+    min-height:120px;
+  }
+  .gitform button{
+    width: 100%;
+    min-height: 47px;
+    padding: 15px 30px;
+    background-color: #CC9E75;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  .gitform button:hover{
+    background-color: #EFDAB7;
+    color: #000;
+  }
+  .gitform_container_right{
+ 
+    padding: 3em 1em 3em 5em;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  .gitform_right_heading{
+    width: 100%;
+    color:   #CC9E75;
+    font-size: 48px;
+    font-weight: 800;
+  }
+  .gitform_right_description {
+    width: 100%;
+  }
+  .gitform_right_description p{
+    width: 300px;
+    
+    text-wrap: wrap;
+  }
+  .contact_card_detail_container{
+     margin-top: 15px;
+  }
+  .contact_card{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    padding: 10px 0px;
+     gap: 18px;
+    align-items: flex-start;
+  }
+  .contact_card_icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #CC9E75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #CC9E75;
+  }
+  .contact_card_icon svg{
+    font-size: 28px;
+  }
+  .contact_card_detail{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_card_detail p{
+    width: 300px;
+  }
+  .contact_card_detail h1{
+    font-size: 20px;
+    color: #CC9E75;
+    font-weight: 600;
+  }
+  @media (max-width:900px) {
+    .gitcontainer{
+        flex-direction: column;
+        position: relative;
+        gap: 20px;
+    }
+    .gitform_container_right{
+        padding: 0px;
+    }
+  }

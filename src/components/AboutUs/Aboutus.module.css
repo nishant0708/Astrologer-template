@@ -1,0 +1,131 @@
+.aboutus {
+    position: relative;
+    width: 100%;
+   padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+   
+  }
+  .aboutus_main{
+    max-width: 1300px;
+    margin: auto;
+  }
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+  
+  .background_img {
+    width:50%;
+   
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #150F3D 0%, #150F3DCC 100%);
+    opacity: 1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    max-width: 1200px; /* Max width for content */
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .imgcontainer {
+    flex: 1;
+    margin-right: 20px;
+    padding: 1em 1em 1em 1em;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #150F3D 0%, #06343D 100%);
+    border-style: dashed;
+    border-width: 1px 1px 1px 1px;
+    max-height: 500px;
+    min-width: 300px;
+    border-color: #FFFFFF2B;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  .about_img {
+    width: 100%;
+    height: 100%;
+  filter: grayscale(100%);
+  animation: all 0.3s;
+  }
+  .about_img:hover{
+    filter: grayscale(0%);
+  }
+  
+  .aboutcontent {
+    padding: 3em 1em 3em 5em;
+    flex: 2;
+    color: #CC9E75; /* Adjusted text color to match the screenshot */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .aboutcontent h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+  
+  .aboutcontent p {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .aboutcontent button {
+    background-color: #CC9E75;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .aboutcontent button:hover{
+    background-color: #EFDAB7;
+    color: black;
+  }
+  @media (max-width:940px) {
+ .aboutus{
+    height: auto;
+ }
+    .content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .imgcontainer{
+        width: max-content;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0;
+    }
+    .about_img{
+        height: 400px;
+    object-fit: contain;
+    }
+    .aboutcontent{
+        padding: 20px;
+    }
+  }
