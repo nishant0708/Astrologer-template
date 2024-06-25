@@ -1,90 +1,150 @@
 .container {
-    position: relative;
-    width: 100%;
-    min-height: 100vh; /* Adjust the height as needed */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-  }
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.imageContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.backgroundImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #150f3dcc 0%, #150f3deb 100%);
+  z-index: 2;
+}
+
+.bookinghrs {
+  z-index: 3;
+  color: white;
+}
+
+.bookinghrsheading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.bookinghrssubheading {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cardcontainer {
+  z-index: 3;
+  display: flex;
+  padding: 1em 3em 1em 3em;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  display: flex;
   
-  .imageContainer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #150f3d 0%, #06343d 100%);
+
+  border: 1px dashed #ffffff2b;
+  padding: 2em 1em;
+  opacity: 0.9;
+}
+.overlay1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #150f3dcc 0%, #06343dd5 100%);
+  z-index: 2;
+}
+.cardBackground {
+  position: absolute;
+  width: 90%;
+
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+
+  z-index: 1;
+}
+.cardBackground img {
+  width: 140px;
+}
+.bookinghrsheading{
+  font-size: 48px;
+  font-weight: 800;
+  color: #CC9E75;
+}
+.bookinghrssubheading{
+  font-size: 24px;
+}
+.day{
+  color: #CC9E75;
+  font-weight: 600;
+  font-size: 18px;
+}
+.cardContent {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+@media (max-width:550px) {
+  .container{
+    padding: 40px 20px;
   }
-  
-  .backgroundImage {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-  }
-  
-  .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    background-image: linear-gradient(180deg, #150F3DCC 0%, #150F3DEB 100%);
-    z-index: 2;
-  }
-  
-  .bookinghrs {
-    z-index: 3;
-    color: white;
-  }
-  
-  .bookinghrsheading {
+  .bookinghrsheading{
     font-size: 24px;
-    margin-bottom: 10px;
   }
-  
-  .bookinghrssubheading {
-    font-size: 16px;
-    margin-bottom: 20px;
+  .card{
+    width: 150px;
+    height: 150px;
   }
-  
+  .cardBackground{
+    left: 50%;
+  }
+  .bookinghrssubheading{
+    font-size: 18px;
+  }
   .cardcontainer {
-    z-index: 3;
+    padding: 3em 0em 3em 0em ;
+    gap: 20px;
   }
-  
-  .card {
-    position: relative;
-    width: 200px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    background-image: linear-gradient(180deg, #150F3D 0%, #06343D 100%);
-    opacity: 0.4;
-    border: 1px dashed #FFFFFF2B;
-    padding: 1em;
-    opacity: 0.9;
+  .time{
+    font-size: 12px;
   }
-  
-  .cardBackground {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  
-  .cardContent {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: center;
-  }
-  
+}

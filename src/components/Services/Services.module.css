@@ -1,0 +1,99 @@
+.services {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #150F3DCC 0%, #150F3D 100%);
+    opacity: 1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0em 0em 7em 0em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.servicesheading {
+    font-size: 36px;
+    font-weight: 800;
+    color: #CC9E75;
+}
+.servicesdesc {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.card {
+    border-style: dashed;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF2B;
+    width: 400px;
+    min-height: 400px;
+    height: auto;
+    align-items: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    z-index: 1; /* Lowered z-index of card */
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+    --e-column-margin-right: 10px;
+    --e-column-margin-left: 10px;
+    padding: 2em 2em 2em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.overlay1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #150F3D 0%, #06343D 100%);
+    z-index: 1; /* Lowered z-index of overlay */
+}
+.card:hover .overlay1{
+   display: block;
+}
+.card:hover{
+    scale: 1.01;
+    border: 1px solid #CC9E75;
+}
+.carddetail {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    z-index: 2; /* Increased z-index of card content */
+    position: relative;
+}
+.cardimage_container{
+    z-index: 2;
+}
+.cardheading {
+    color: #CC9E75;
+    font-weight: 600;
+    font-size: 20px;
+}
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.button {
+    background-color: #CC9E75;
+    color: white;
+    width: 150px;
+   padding: 5px 0px;
+    margin: auto;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out ;
+}
+.button:hover{
+    background-color: #EFDAB7;;
+    color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 3em 1em 3em;
+    gap: 30px;
+    flex-wrap: wrap;
+}
